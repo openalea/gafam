@@ -1,5 +1,5 @@
 from math import pi
-from path import Path
+from pathlib import Path
 from collections import OrderedDict
 
 import pandas as pd

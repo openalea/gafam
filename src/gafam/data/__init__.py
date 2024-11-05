@@ -1,7 +1,7 @@
 import os, glob
-from path import Path
+from pathlib import Path
 
-data_dir = Path(os.path.dirname(__file__)).abspath()
+data_dir = Path(os.path.dirname(__file__)).resolve()
 
 def files():
     fns = data_dir.glob('*.txt')
@@ -9,9 +9,9 @@ def files():
     return fns
 
 def file(fn):
-    fns = data_dir.glob('%s.txt'%fn)
+    fns = list(data_dir.glob('%s.txt'%fn))
     return fns[0]
 
 def treatment():
-    fns = data_dir.glob('treatment.csv')
+    fns = list(data_dir.glob('treatment.csv'))
     return fns[0]
