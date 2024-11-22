@@ -6,6 +6,9 @@ conda install -c conda-forge -c openalea3 openalea.mtg path.py notebook ipython
 
 ## Analysis
 
+Here is the variables that can be extracted
+![Multiscale appeltree extraction](./Data_to_Extract.jpg)
+
 ### Tree (per year)
 - Sum( leaf area )
 - Sum( GUs Lengths )
