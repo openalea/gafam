@@ -2,7 +2,7 @@
 
 ## Installation
 
-conda install -c conda-forge -c openalea3 openalea.mtg path.py notebook ipython
+conda install -c conda-forge -c openalea3 openalea.mtg pandas notebook ipython
 
 ## Analysis
 
