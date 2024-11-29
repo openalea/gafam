@@ -45,11 +45,13 @@ Dans les échanges qui suive on clarifie que:
 
 On se met d'accord que il faudrait extraire:
 
-    le nombre de GU, 
-	la leaf area, 
-	le nombre de leaves, flowers et fruits, pour chaque ordre de ramification (A, B, ...)
+    le nombre de GU, (done)
+	la leaf area, (done)
+	le nombre de leaves, flowers et fruits, pour chaque ordre de ramification (A, B, ...) (done)
     les angles et diamètres basal (ramification B)
+		min, max median angle
     et de corriger la variable trt
+		todo
     on verra à la fin si c'est possible enlever les sommes déjà calculées sur les lignes 2017
 
 
@@ -58,3 +60,5 @@ Nombre GU
 
 # Updater analyse_p1 dans test
 #
+
+# Identifier les angles > 180. : 360. - angle
