@@ -38,3 +38,8 @@ Here is the variables that can be extracted
 - Sum( Length )
 - Count( number of GUs )
 - Count( FL, VG, LB, EX )
+
+
+## Notebook for Reproducibility
+
+[![NBViewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/openalea/gafam/blob/paper/notebook/Paper.ipynb)
