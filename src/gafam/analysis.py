@@ -15,9 +15,9 @@ def activate_debug():
     global _debug
     _debug = True
 
-def load_data():
+def load_data(data_dir=None):
     "Return a list of MTGs"
-    return data.files()
+    return data.files(dir=data_dir)
 
 def missing_components(g):
     missings = [v for v in g.vertices(scale=2) if g.nb_components(v) == 0]
@@ -1106,12 +1106,12 @@ def branches2(fns=None, save=False):
     return all_df, errors
 
 
-def full_analysis(verbose=False):
+def full_analysis(data_dir=None, verbose=False):
     trtfile = data.treatment()
     df = pd.read_csv(trtfile)
     tree_trt = dict(zip(list(df.Tree), list(df.traitement)))
 
-    fns = load_data()
+    fns = load_data(data_dir=data_dir)
 
     trees = []
     trts = []

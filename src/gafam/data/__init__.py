@@ -3,8 +3,12 @@ from pathlib import Path
 
 data_dir = Path(os.path.dirname(__file__)).resolve()
 
-def files():
-    fns = data_dir.glob('*.txt')
+def files(dir=None):
+    if dir is None:
+        dir = data_dir
+    else:
+        dir=Path(dir)
+    fns = dir.glob('*.txt')
     fns = sorted(fns, key= lambda x:int(x.name.split('.')[0][1:]))
     return fns
 
