@@ -9,6 +9,12 @@ from openalea.mtg import algo, traversal
 
 from . import data
 
+_debug = False
+
+def activate_debug():
+    global _debug
+    _debug = True
+
 def load_data():
     "Return a list of MTGs"
     return data.files()
@@ -31,14 +37,14 @@ def check_roots(g, scale=2):
     return [v for v in g.vertices_iter(scale=scale) if v!=scale and g.parent(v) is None]
 
 
-# Check voir test
+# Check see test
 
 def debug():
     fns = load_data()
     for fn in fns:
         print('\n'+'#'*20)
         print(fn)
-        g=MTG(fn, has_date=True)
+        g=MTG(fn, has_date=True, verbose=False)
         g.display(max_scale=3)
         #x=raw_input('Yes?')
 
@@ -650,9 +656,10 @@ def forest(fns=None, save=False):
     errors=[]
     for fn in fns:
         try:
-            print('#'*80)
-            print("MTG is ", fn)
-            g=MTG(fn, has_date=True)
+            if _debug: 
+                print('#'*80)
+                print("MTG is ", fn)
+            g=MTG(fn, has_date=True, verbose=False)
             df = Tree(g)()
             dfs.append(df)
         except:
@@ -678,9 +685,10 @@ def branches(fns=None, save=False):
     errors=[]
     for fn in fns:
         try:
-            print('#'*80)
-            print("MTG is ", fn)
-            g=MTG(fn, has_date=True)
+            if _debug: 
+                print('#'*80)
+                print("MTG is ", fn)
+            g=MTG(fn, has_date=True, verbose=False)
             df = Branches(g)()
             dfs.append(df)
         except:
@@ -1047,9 +1055,10 @@ def forest2(fns=None, save=False):
     errors=[]
     for fn in fns:
         try:
-            print('#'*80)
-            print("MTG is ", fn)
-            g=MTG(fn, has_date=True)
+            if _debug: 
+                print('#'*80)
+                print("MTG is ", fn)
+            g=MTG(fn, has_date=True, verbose=False)
             df = Tree2(g)()
             dfs.append(df)
         except:
@@ -1075,9 +1084,10 @@ def branches2(fns=None, save=False):
     errors=[]
     for fn in fns:
         try:
-            print('#'*80)
-            print("MTG is ", fn)
-            g=MTG(fn, has_date=True)
+            if _debug: 
+                print('#'*80)
+                print("MTG is ", fn)
+            g=MTG(fn, has_date=True, verbose=False)
             df = Branches2(g)()
             dfs.append(df)
         except:
@@ -1096,7 +1106,7 @@ def branches2(fns=None, save=False):
     return all_df, errors
 
 
-def full_analysis():
+def full_analysis(verbose=False):
     trtfile = data.treatment()
     df = pd.read_csv(trtfile)
     tree_trt = dict(zip(list(df.Tree), list(df.traitement)))
@@ -1132,7 +1142,9 @@ def full_analysis():
 
     for fn in fns:
 
-        g = MTG(fn, has_date=True)
+        if _debug:
+            print(f'MTG : {fn}')
+        g = MTG(fn, has_date=True, verbose=verbose)
 
         t = Tree2(g)
         dates = t.dates()
@@ -1183,9 +1195,7 @@ def full_analysis():
 
         _la18 = 0
         for label in labels18:
-            print('%s18'%label,)
             x = sum(map(t.la18, labels18[label]))
-            print(x)
             _la18+=x
         # print('LeafSurface 18', _la18)
 
