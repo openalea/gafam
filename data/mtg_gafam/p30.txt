@@ -5,12 +5,12 @@ CODE : FORM-A
 CLASSES :																															
 SYMBOL	SCALE	DECOMPOSITION	INDEXATION	DEFINITION																											
 $	0	FREE	FREE	IMPLICIT																											
-P	1	FREE	FREE	EXPLICIT	#Pommier																										
-A	2	FREE	FREE	EXPLICIT	#Axe principal																										
-B	2	FREE	FREE	EXPLICIT	#Ramification_ordre2																										
-C	2	FREE	FREE	EXPLICIT	#Ramification_ordre3																										
-D	2	FREE	FREE	EXPLICIT	#Ramification_ordre4																										
-S	3	FREE	FREE	EXPLICIT	#Noeud																										
+P	1	FREE	FREE	EXPLICIT	# Apple																												
+A	2	FREE	FREE	EXPLICIT	# Main Axis																												
+B	2	FREE	FREE	EXPLICIT	# Branch order 2																												
+C	2	FREE	FREE	EXPLICIT	# Branch order 3																												
+D	2	FREE	FREE	EXPLICIT	# Branch order 4																												
+S	3	FREE	FREE	EXPLICIT	# Internode																													
 																															
 DESCRIPTION :																															
 LEFT	RIGHT	RELTYPE	MAX																												
@@ -1584,7 +1584,7 @@ ENTITY-CODE										treedate	Date	length_graftpoint_ram	diameter	diameter_b	dia
 	^<S525																		BL												
 	^<S526																														
 		+S527									2018					0.7			FL		7	7	0		54.25923	102.6877166					
-		¨/S527.1									2019								NA												
+		ï¿½/S527.1									2019								NA												
 	^<S528																		BL												
 	^<S529																														
 		+S530									2018					2.6			FL		4	6	0		68.86814	86.88591974					
