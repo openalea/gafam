@@ -44,4 +44,4 @@ Here is the variables that can be extracted
 
 ## Notebook for Reproducibility
 
-[![NBViewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/openalea/gafam/blob/paper/notebook/Paper.ipynb)
+[![NBViewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/openalea/gafam/tree/main/notebook/Paper.ipynb)
