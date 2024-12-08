@@ -6,9 +6,11 @@
 
 conda install -c conda-forge -c openalea3 openalea.mtg pandas notebook ipython
 
-## Data set
+## Data sets
 
-The dataset (Multiscale Tree Graph of MTG, tre  tments) that contains 45 trees is located [here](src/gafam/data)
+This repository contains the architectural data of **45 apple trees** encoding as MTG.
+The data set is loacated in [src/gafam/data](src/gafam/data) with asssociated Python package for automatic and simpler analysis.
+
 
 ## Analysis
 
