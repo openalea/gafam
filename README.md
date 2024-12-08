@@ -6,6 +6,10 @@
 
 conda install -c conda-forge -c openalea3 openalea.mtg pandas notebook ipython
 
+## Data set
+
+The dataset (Multiscale Tree Graph of MTG, tre  tments) that contains 45 trees is located [here](src/gafam/data)
+
 ## Analysis
 
 Here is the variables that can be extracted
