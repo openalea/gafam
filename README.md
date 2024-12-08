@@ -1,6 +1,6 @@
 # GAFAM: Growing AgroForestry with Apple in Mediterranean climate
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14253434.svg)](https://doi.org/10.5281/zenodo.14253434) [![NBViewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/openalea/gafam/tree/main/notebook/Paper.ipynb)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14253433.svg)](https://doi.org/10.5281/zenodo.1425343) [![NBViewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/openalea/gafam/tree/main/notebook/Paper.ipynb)
 
 ## Installation
 
