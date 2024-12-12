@@ -1119,7 +1119,7 @@ def full_analysis(data_dir=None, verbose=False):
     LA_2019s = []
     nb_GU_2018s = []
     nb_GU_2019s = []
-    tree_columns='apple_tree trt LA_2018 LA_2019 nb_GU_2018 nb_GU_2019'
+    tree_columns='tree trt LA_2018 LA_2019 nb_GU_2018 nb_GU_2019'
     GU_columns='tree trt years GU LeafArea nb_GU nb_leaves nb_flowers nb_fruits'
     B_columns='tree trt years diameters angles'
 
